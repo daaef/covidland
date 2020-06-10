@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page Title -->
+    <title>covidland</title>
+
+    <!-- Meta Data -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <!-- Web Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900%7CPoppins:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- ======= Magnific Popup CSS ======= -->
+    <link rel="stylesheet" href="assets/plugins/magnific-popup/magnific-popup.min.css">
+
+    <!-- ======= Data Tables CSS ======= -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/data-tables/datatables.min.css" />
+
+    <!-- ======= Main Stylesheet ======= -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- ======= Custom Stylesheet ======= -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <main class="wrapper" id="home">
+        <!-- Preloader -->
+        <!-- <div class="preloader w-100 h-100 position-fixed bg-white">
+            <img src="assets/img/preloader.png" alt="">
+        </div> -->
+        <!-- End Preloader -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-fixed">
+                <div class="container">
+                    <div class="row no-gutters align-items-center position-relative">
+                        <div class="col-lg-2 col-sm-4 col-5">
+                            <!-- Logo -->
+                            <div class="logo">
+                                <a href="/">
+                                    <img src="assets/img/logo.png" style="width: 60px;" alt="" />
+                                </a>
+                            </div>
+                            <!-- End Logo -->
+                        </div>
+
+                        <div class="col-lg-8 col-sm-4 col-4 position-static">
+                            <!-- Main Menu -->
+                            <div
+                                class="main-menu d-flex align-items-center justify-content-lg-center justify-content-end">
+                                <!-- Nav -->
+                                <ul class="nav align-items-center onPageNav">
+                                    <li>
+                                        <a href="#home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#symptoms">Symptoms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#prevention">Prevention</a>
+                                    </li>
+                                    <li>
+                                        <a href="#countries">Countries</a>
+                                    </li>
+                                   
+                                </ul>
+                                <!-- End Nav -->
+                            </div>
+                            <!-- End Main Menu -->
+                        </div>
+
+                        <div class="col-lg-2 col-sm-4 col-3 text-right">
+                            <a href="#" class="btn header-btn">
+                                <span class="icon d-sm-none">
+                                    <img src="assets/img/icon/sick.svg" class="svg" alt="">
+                                </span>
+                                <span class="d-none d-sm-block">are you sick?</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Banner -->
+        <section class="banner d-flex align-items-center justify-content-center" data-bg-img="assets/img/banner.png">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Banner Content -->
+                        <div class="banner-content text-center">
+                            <h1>Coronavirus disease (COVID-19) outbreak</h1>
+                            <p class="ml-auto mr-auto">Most people infected with the COVID-19 virus will experience mild to moderate respiratory
+                                illness and requiring special treatment. Older people, and those with underlying medical
+                                problems
+                            </p>
+
+                            <div class="banner-btn-group">
+                                <a href="#" class="btn">How to protect</a>
+                                <a href="#" class="btn btn-borderd">about COVID-19</a>
+                            </div>
+                        </div>
+                        <!-- End Banner Content -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Live Update -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="corona-live-update top-50" data-bg-img="assets/img/pattern.png">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-lg">
+                                    <div
+                                        class="live-update-title d-flex flex-column align-items-center justify-content-center p-20">
+                                        <h2 class="d-inline-flex align-items-center">
+                                            <span>Live</span>
+                                            <span>update</span> </h2>
+                                        <span>Nigeria</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg">
+                                    <!-- Corona Update -->
+                                    <div id="coronaUpdate" class="corona-update row no-gutters">
+                                        <!-- Info -->
+                                        <div class="col-lg-3 col-sm-6 cu_info cu_confirmed d-flex flex-column align-items-center justify-content-center p-30">
+                                            <h2 class="cuTotal">&nbsp;</h2>
+                                            <span>Confirmed</span>
+                                        </div>
+                                        <!-- End Info -->
+
+                                        <!-- Info -->
+                                        <div
+                                            class="col-lg-3 col-sm-6 cu_info cu_recovered d-flex flex-column align-items-center justify-content-center p-30">
+                                            <h2 class="cuRecovered">&nbsp;</h2>
+                                            <span>Recovered</span>
+                                        </div>
+                                        <!-- End Info -->
+
+                                        <!-- Info -->
+                                        <div
+                                            class="col-lg-3 col-sm-6 cu_info cu_deaths d-flex flex-column align-items-center justify-content-center p-30">
+                                            <h2 class="cuDeaths">&nbsp;</h2>
+                                            <span>Total Deaths</span>
+                                        </div>
+                                        <!-- End Info -->
+
+
+                                        <!-- Info -->
+                                        <div
+                                            class="col-lg-3 col-sm-6 cu_info cu_countries d-flex flex-column align-items-center justify-content-center p-30">
+                                            <h2 class="cuContries">&nbsp;</h2>
+                                            <span>Active Cases</span>
+                                        </div>
+                                        <!-- End Info -->
+                                    </div>
+                                    <!-- End Corona Update -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Live Update -->
+
+        <!-- About -->
+        <section id="about" class="pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <!-- Video Area -->
+                        <div class="video-area position-relative mb-50 mb-lg-0 d-inline-block">
+                            <img src="assets/img/about-img.png" alt="">
+
+                            <!-- Video Play Button -->
+                            <a href="https://youtu.be/Xa9HoEI6Pqc"
+                                class="btn-play video_popup mfp-iframe position-absolute">
+                                <img src="assets/img/icon/play.svg" class="svg" alt="">
+                            </a>
+                            <!-- End Video Play Button -->
+                        </div>
+                        <!-- End Video Area -->
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- Section Title -->
+                        <div class="section-title mb-40">
+                            <span>about diseases</span>
+                            <h2>What is coronavirus?</h2>
+                        </div>
+                        <!-- End Section Title -->
+
+                        <!-- Info Text -->
+                        <div class="info-text border-bottom">
+                            <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly
+                                discovered coronavirus. Most people infected with the COVID-19, virus will
+                                experience mild to moderate, respiratory illness & recover without requiring
+                                special treatment. Older people and those with underlying medical problem
+                                like cardiovascular disease.</p>
+
+                            <p>The COVID-19 virus spread primarily through droplet of saliva or discharge
+                                from the nose when an infected person coughs or sneezes so it’s important
+                                that you also practice respiratory etiquette.</p>
+                        </div>
+                        <!-- End Info Text -->
+
+
+                        <!-- Symptoms -->
+                        <div class="symptoms mt-40 row no-gutters">
+                            <!-- Single Symptoms -->
+                            <div class="single-symptoms media align-items-center col-sm">
+                                <div class="icon">
+                                    <img src="assets/img/icon/s-1.svg" class="svg" alt="">
+                                </div>
+
+                                <div class="media-body">
+                                    <p>High Fever</p>
+                                </div>
+                            </div>
+                            <!-- End Single Symptoms -->
+
+                            <!-- Single Symptoms -->
+                            <div class="single-symptoms media align-items-center col-sm">
+                                <div class="icon">
+                                    <img src="assets/img/icon/s-2.svg" class="svg" alt="">
+                                </div>
+
+                                <div class="media-body">
+                                    <p>Heavy Tiredness</p>
+                                </div>
+                            </div>
+                            <!-- End Single Symptoms -->
+
+                            <!-- Single Symptoms -->
+                            <div class="single-symptoms media align-items-center col-sm">
+                                <div class="icon">
+                                    <img src="assets/img/icon/s-3.svg" class="svg" alt="">
+                                </div>
+
+                                <div class="media-body">
+                                    <p>Dry cough</p>
+                                </div>
+                            </div>
+                            <!-- End Single Symptoms -->
+                        </div>
+                        <!-- End Symptoms -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+
+        <!-- Symptoms -->
+        <section id="symptoms" class="pt-120 pb-120 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center mb-75">
+                            <span>about Symptoms</span>
+                            <h2>Covid-19 Symptoms</h2>
+                        </div>
+                        <!-- End Section Title -->
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <!-- Image -->
+                        <figure class="mb-50 mb-lg-0">
+                            <img src="assets/img/symptoms.png" style="min-width: 600px;" alt="">
+                        </figure>
+                        <!-- End Image -->
+                    </div>
+
+                    <div class="col-xl-7 col-lg-6">
+                        <!-- Symptoms -->
+                        <div class="symptoms-wrapper d-xl-flex align-items-center">
+                            <figure class="d-none d-xl-block">
+                                <img src="assets/img/s-line.png" class="w-100 h-100" alt="">
+                            </figure>
+
+                            <div class="card-wrapper">
+                                <!-- Card -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Fever</span>
+                                        <h3>Hight Fever 2-14 days!</h3>
+                                        <p>Reported illnesses have ranged from mild symptoms
+                                            to severe illness and death</p>
+                                    </div>
+                                </div>
+                                <!-- End Card -->
+
+                                <!-- Card -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>Cough</span>
+                                        <h3>Dry Cough 2-14 days!</h3>
+                                        <p>Reported illnesses have ranged from mild symptoms
+                                            to severe illness and death</p>
+                                    </div>
+                                </div>
+                                <!-- End Card -->
+
+                                <!-- Card -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span>breath</span>
+                                        <h3>Shortness of breath!</h3>
+                                        <p>Reported illnesses have ranged from mild symptoms
+                                            to severe illness and death</p>
+                                    </div>
+                                </div>
+                                <!-- End Card -->
+                            </div>
+                        </div>
+                        <!-- End Symptoms -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Symptoms -->
+        
+        <!-- Country Update -->
+        <section id="countries" class="pt-120 pb-120 pattern-bg-wrapper">
+            <img src="assets/img/bg-pattren.png" class="pattern-bg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Image -->
+                        <figure class="mb-50 mb-lg-0 text-center">
+                            <img class="radius-10" src="assets/img/country-update.png" alt="">
+                        </figure>
+                        <!-- End Image -->
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- Section Title -->
+                        <div class="section-title mb-30 mt-lg-40">
+                            <span>Transmition</span>
+                            <h2>How is Covid-19 Transmitted?</h2>
+                        </div>
+                        <!-- End Section Title -->
+
+                        <!-- Info Text -->
+                        <div class="info-text">
+                            <p>Studies to date show that the virus is spread primarily through droplets in the air from an infected person coughing, sneezing or talking. It can also be spread by contact with a surface contaminated by the virus.</p>
+
+                            <p>This is why we should avoid crowds and mass gatherings, avoid handshakes and hugs, wash our hands regularly with soap and water, and when in public maintain physical distancing and endeavour to wear a mask. As much as is possible, Stay At Home!</p>
+                        </div>
+                        <!-- End Info Text -->
+
+                        <!-- Button -->
+                        <!-- <a href="#" class="btn mt-15">About More</a> -->
+                        <!-- End Button -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Country Update --> 
+
+        <!-- Prevention -->
+        <section id="prevention" class="pt-120 pb-90 bg-cover" data-bg-img="assets/img/prevention-bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center mb-75">
+                            <span class="text-white">Covid prevention</span>
+                            <h2 class="text-white">Covid-19 Prevention</h2>
+                        </div>
+                        <!-- End Section Title -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Feature -->
+                        <div class="single-prevention text-center mb-30">
+                            <!-- Icon -->
+                            <div class="icon mb-30">
+                                <img src="assets/img/icon/p-1.png" alt="">
+                            </div>
+                            <!-- End Icon -->
+
+                            <!-- Content -->
+                            <div class="content">
+                                <p class="text-white">Wash your <br> Hands often</p>
+                            </div>
+                            <!-- End Content -->
+                        </div>
+                        <!-- End Feature -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Feature -->
+                        <div class="single-prevention text-center mb-30">
+                            <!-- Icon -->
+                            <div class="icon mb-30">
+                                <img src="assets/img/icon/p-2.png" alt="">
+                            </div>
+                            <!-- End Icon -->
+
+                            <!-- Content -->
+                            <div class="content">
+                                <p class="text-white">Wear A <br> Face mask</p>
+                            </div>
+                            <!-- End Content -->
+                        </div>
+                        <!-- End Feature -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Feature -->
+                        <div class="single-prevention text-center mb-30">
+                            <!-- Icon -->
+                            <div class="icon mb-30">
+                                <img src="assets/img/icon/p-3.png" alt="">
+                            </div>
+                            <!-- End Icon -->
+
+                            <!-- Content -->
+                            <div class="content">
+                                <p class="text-white">Avoid contact <br> with sick people</p>
+                            </div>
+                            <!-- End Content -->
+                        </div>
+                        <!-- End Feature -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Feature -->
+                        <div class="single-prevention text-center mb-30">
+                            <!-- Icon -->
+                            <div class="icon mb-30">
+                                <img src="assets/img/icon/p-4.png" alt="">
+                            </div>
+                            <!-- End Icon -->
+
+                            <!-- Content -->
+                            <div class="content">
+                                <p class="text-white">Always cover your <br>cough or sneeze</p>
+                            </div>
+                            <!-- End Content -->
+                        </div>
+                        <!-- End Feature -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Prevention -->
+
+        <!-- Data Table -->
+        <section id="dataTable" class="pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center mb-75">
+                            <span>Affected Local Governments</span>
+                            <h2>All LGA List</h2>
+                        </div>
+                        <!-- End Section Title -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Data Table -->
+                        <div class="coronaDataTableWrapper table-responsive">
+                            <table id="coronaDataTable" class="coronaDataTable">
+                                <thead>
+                                    <tr>
+                                        <th>Flag</th>
+                                        <th>country name</th>
+                                        <th>total cases</th>
+                                        <th>total deaths</th>
+                                        <th>recovered</th>
+                                        <th>critical</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- End Data Table -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Data Table -->
+
+
+        <!-- Footer -->
+        <footer class="footer bg-cover" data-bg-img="assets/img/footer-bg.jpg">
+            <!-- Footer Top -->
+            <div class="container">
+                <!-- Footer Top -->
+                <div class="footer-top">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <!-- Newsletter Title -->
+                            <h3 class="newsletter-title text-white mb-30 mb-lg-0">Subscribe To Our Newsletter</h3>
+                            <!-- Newsletter Title -->
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Newsletter Form -->
+                            <div class="newsletter-form">
+                                <form
+                                    action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&id=f4e0e93d1d">
+                                    <div class="theme-input-wrapper">
+                                        <input type="text" class="theme-input-style"
+                                            placeholder="Enter your email address">
+                                        <button type="submit" class="btn">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- End Newsletter Form -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Footer Top -->
+
+                <!-- Footer Main -->
+                <div class="footer-main">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <!-- Widget -->
+                            <div class="widget widget-about text-white">
+                                <!-- Logo -->
+                                <div class="logo mb-30">
+                                    <a href="/">
+                                        <img src="assets/img/footer-logo.png" style="width: 60px;" alt="" />
+                                    </a>
+                                </div>
+                                <!-- End Logo -->
+
+                                <p>Quis ipsum suspendisse ultrices
+                                    gravida. Risus commodo viverra
+                                    maecenas accumsan.</p>
+                            </div>
+                            <!-- End Widget -->
+
+                            <!-- Widget Social Icon -->
+                            <div class="widget widget-social-icon">
+                                <ul class="list-unstyled d-flex">
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/icon/twitter.svg" class="svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/icon/facebook.svg" class="svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/icon/linkedin.svg" class="svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/icon/instagram.svg" class="svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/icon/youtube.svg" class="svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Widget Social Icon -->
+                        </div>
+
+                        <div class="col-lg-2 col-sm-6">
+                            <!-- Widget -->
+                            <div class="widget widget_nav_menu">
+                                <h3 class="widget-title text-white">Quick Links</h3>
+
+                                <ul class="list-unstyled text-white">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Doctors</a></li>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Prevention</a></li>
+                                </ul>
+                            </div>
+                            <!-- End Widget -->
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <!-- Widget -->
+                            <div class="widget widget_contacts">
+                                <h3 class="widget-title text-white">Contacts</h3>
+
+                                <ul class="list-unstyled text-white">
+                                    <li>Address: 2750 Strump Street</li>
+                                    <li>Victoria, United State.</li>
+                                    <li>Email:info@covidland.com</li>
+                                    <li>Phone:+44 587 154756</li>
+                                    <li>Fax:+55 785 4578964</li>
+                                </ul>
+                            </div>
+                            <!-- End Widget -->
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <!-- Widget -->
+                            <div class="widget widget_contacts">
+                                <h3 class="widget-title text-white">Working Days</h3>
+
+                                <ul class="list-unstyled text-white">
+                                    <li>Monday: 8AM - 6PM</li>
+                                    <li>Tuesday: 8AM - 6PM</li>
+                                    <li>Wednesday: 8AM - 6PM</li>
+                                    <li>Thur - Fri: 8AM - 6PM</li>
+                                    <li>Sunday: 8AM - 6PM</li>
+                                </ul>
+                            </div>
+                            <!-- End Widget -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Footer Main -->
+            </div>
+            <!-- End Footer Top -->
+
+            <!-- Footer Boottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 text-center text-lg-left">
+                            <!-- Copyright Text -->
+                            <span class="copyright-text text-white">Copyright © 2020 CovidLand Design By
+                                Themelooks</span>
+                            <!-- End Copyright Text -->
+                        </div>
+                        <div class="col-lg-6 order-first order-lg-last">
+                            <!-- Footer Menu -->
+                            <ul
+                                class="list-unstyled footer-menu d-flex align-items-center justify-content-center justify-content-lg-end mb-15 mb-lg-0">
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                            <!-- End Footer Menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Boottom -->
+        </footer>
+        <!-- End Footer -->
+    </main>
+    <!-- End Main Wrapper -->
+
+    <!-- ======= jQuery Library ======= -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- ======= Data Table JS ======= -->
+    <script src="assets/plugins/data-tables/datatables.min.js"></script>
+
+    <!-- ======= Magnific Popup JS ======= -->
+    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- ======= One Page Nav JS ======= -->
+    <script src="assets/plugins/nav/nav.min.js"></script>
+
+    <!-- ======= Menu JS ======= -->
+    <script src="assets/js/menu.min.js"></script>
+
+    <!-- ======= Main JS ======= -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ======= Custom JS ======= -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
